@@ -3229,7 +3229,7 @@ ElementsTable.Button = (function()
 		local ButtonFrame = Components.Element(Config.Title, Config.Description, self.Container, true, Config)
 
 		local ButtonIco = New("ImageLabel", {
-			Image = "rbxassetid://9968344105",
+			Image = "rbxassetid://10709791437",
 			Size = UDim2.fromOffset(16, 16),
 			AnchorPoint = Vector2.new(1, 0.5),
 			Position = UDim2.new(1, -10, 0.5, 0),
@@ -6420,7 +6420,7 @@ ImageButton.Image = "rbxassetid://70938068058043"
 ImageButton.Draggable = true
 UIStroke.Parent = ImageButton
 UIStroke.Thickness = 3
-UIStroke.Color = Color3.fromRGB(230,144,233)
+UIStroke.Color = Color3.fromRGB(118,222,243)
 UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 UICorner.CornerRadius = UDim.new(1, 0)
 UICorner.Parent = ImageButton
