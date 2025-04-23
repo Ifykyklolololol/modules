@@ -6396,34 +6396,5 @@ local InterfaceManager = {} do
 		Library.MinimizeKeybind = MenuKeybind
 	end
 end
-if game.CoreGui:FindFirstChild('UIBUTTON') then game.CoreGui:FindFirstChild('UIBUTTON'):Destroy()end
-local TweenService = game:GetService("TweenService")
-local UserInputService = game:GetService("UserInputService")
-local UIBUTTON = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local ImageButton = Instance.new("ImageButton")
-local UICorner = Instance.new("UICorner")
-local UIStroke = Instance.new("UIStroke")
-UIBUTTON.Name = "UIBUTTON"
-UIBUTTON.Parent = game.CoreGui
-UIBUTTON.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Frame.Parent = UIBUTTON
-Frame.BackgroundTransparency = 1
-Frame.Position = UDim2.new(0.15, 0, 0.16, 0)
-Frame.Size = UDim2.new(0, 50, 0, 50)
-ImageButton.Parent = Frame
-ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.BorderSizePixel = 0
-ImageButton.Position = UDim2.new(0, 0, 0, 0)
-ImageButton.Size = UDim2.new(1, 0, 1, 0)
-ImageButton.Image = "rbxassetid://106326553644631"
-ImageButton.Draggable = true
-UIStroke.Parent = ImageButton
-UIStroke.Thickness = 3
-UIStroke.Color = Color3.fromRGB(118,222,243)
-UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-UICorner.CornerRadius = UDim.new(1, 0)
-UICorner.Parent = ImageButton
-ImageButton.MouseButton1Click:Connect(function() game:GetService("VirtualInputManager"):SendKeyEvent(true, Enum.KeyCode.End, false, game) end)
-task.wait(0.1)
+
 return Library, SaveManager, InterfaceManager, Mobile
